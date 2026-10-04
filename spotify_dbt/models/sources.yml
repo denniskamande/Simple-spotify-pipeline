@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: spotify_events
+        description: Raw play events loaded from SeaweedFS by loader/s3_to_postgres.py
+        columns:
+          - name: event_id
+            tests: [unique, not_null]
+      - name: artist_genres
+        description: Artist genres fetched from Spotify by loader/artist_genres.py
+        columns:
+          - name: artist_id
+            tests: [unique, not_null]

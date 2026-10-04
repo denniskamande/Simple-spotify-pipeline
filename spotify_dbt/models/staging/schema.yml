@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_spotify_events
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: played_at
+        tests: [not_null]
+
+  - name: stg_artist_genres
+    columns:
+      - name: artist_id
+        tests: [unique, not_null]
+      - name: genre_group
+        tests: [not_null]

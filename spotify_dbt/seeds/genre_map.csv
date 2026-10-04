@@ -1,0 +1,31 @@
+priority,keyword,genre_group
+1,hip hop,Rap / Hip-hop
+1,rap,Rap / Hip-hop
+1,drill,Rap / Hip-hop
+1,grime,Rap / Hip-hop
+2,r&b,R&B / Soul
+2,soul,R&B / Soul
+2,funk,R&B / Soul
+3,afrobeat,Afrobeats / African
+3,amapiano,Afrobeats / African
+3,bongo flava,Afrobeats / African
+3,gengetone,Afrobeats / African
+3,afro,Afrobeats / African
+4,reggae,Reggae / Dancehall
+4,dancehall,Reggae / Dancehall
+5,latin,Latin
+5,reggaeton,Latin
+6,gospel,Gospel / Worship
+6,worship,Gospel / Worship
+7,pop,Pop
+8,rock,Rock / Metal
+8,metal,Rock / Metal
+8,punk,Rock / Metal
+9,edm,Electronic
+9,electro,Electronic
+9,house,Electronic
+9,techno,Electronic
+9,dance,Electronic
+10,country,Country
+11,jazz,Jazz
+12,classical,Classical

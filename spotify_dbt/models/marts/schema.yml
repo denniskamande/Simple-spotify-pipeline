@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_listening_events
+    columns:
+      - name: event_id
+        tests: [unique, not_null]
+      - name: track_id
+        tests: [not_null]
+      - name: listened_ms
+        tests: [not_null]
+
+  - name: dim_tracks
+    columns:
+      - name: track_id
+        tests: [unique, not_null]
+
+  - name: dim_artists
+    columns:
+      - name: artist_id
+        tests: [unique, not_null]

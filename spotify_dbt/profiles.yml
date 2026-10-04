@@ -1,0 +1,14 @@
+# Run dbt from this folder: `dbt run --profiles-dir .`
+# Credentials come from environment variables (load your .env first).
+spotify_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('POSTGRES_HOST', 'localhost') }}"
+      port: "{{ env_var('POSTGRES_PORT', '5433') | as_number }}"
+      user: "{{ env_var('POSTGRES_USER', 'spotify') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD') }}"
+      dbname: "{{ env_var('POSTGRES_DB', 'spotify_dw') }}"
+      schema: analytics
+      threads: 2
